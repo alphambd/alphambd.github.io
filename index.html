@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio | Alpha Diallo</title>
+        <title>Portfolio | Alpha Diallo - Étudiant en Master Data & Systèmes Connectés</title>
+        <meta name="description" content="Alpha Diallo, étudiant en Master Données et Systèmes Connectés, recherche un stage de 6 mois à partir de février 2026 en développement Full Stack Java/Angular ou Data Engineering">
         <link rel="stylesheet" href="css/style.css">
-
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/style_chargement.css"> <!-- CSS pour l'animation de chargement -->
+        
         <!-- box icons link -->
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         
         <!-- remix icons link -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-        rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
         <!-- google fonts link -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,59 +22,66 @@
         
         <!--from aos animation github-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- link for EmailJS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
     </head>
+
+    <!-- emailjs script link -->
+    <script src="js/script_email.js"></script>
     <body>
         <!-- header -->
-         <header>
-            <a href="#" class="logo">Developer <span>Full Stack</span> </a>
+        <header>
+            <a href="index.html" class="logo">Alpha <span>Diallo</span></a>
         
             <div class="bx bx-menu" id="menu-icon"></div>
         
             <ul class="navlist">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#profils">Mes profils</a></li>
+                <li><a href="#competences">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="top-btn">
-                <a href="#" class="h-btn">Contact me</a>
+                <a href="#contact" class="h-btn">Me contacter</a>
             </div>
         </header>
 
         <!-- hero -->
         <section class="hero" id="home">
             <div class="main-content" data-aos="fade-in">
-                <h4>Hi, There!</h4>
-                <h1>I'm <span>Alpha Diallo </span></h1>
-                <!--
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit consequuntur quasi molestias. Laborum atque fugiat tenetur accusamus similique illo at velit necessitatibus repudiandae est esse deserunt, officiis alias ut?</p>
-                -->
-                <p>I'm a passionate Full-Stack Developer and AI enthusiast, currently pursuing a double Master's degree in Computer Science at École des Mines Saint-Étienne.
-                I specialize in building intelligent web applications that combine clean design, scalable backends, and machine learning models — from sales forecasting systems to real-time collaborative platforms.
-                </p>
+                <h4>Bonjour, je suis</h4>
+                <h1><span>Alpha Diallo</span></h1>
+                <h2>Étudiant en Master Data & Systèmes Connectés</h2>
+                
                 <p>
-                    I'm now seeking a 4–6 month internship starting February 2026, where I can contribute to impactful projects and grow in a dynamic tech team.
+                    Actuellement en deuxième année de Master Données et Systèmes Connectés à l'Université Jean Monnet et l'École des Mines de Saint-Étienne, je recherche un <strong>stage de 6 mois à partir de février 2026</strong>.
                 </p>
-                <!--
+                
                 <p>
-                Driven by curiosity and rigor, I enjoy solving complex problems with code, whether in Java, Python, or modern JavaScript frameworks like Angular and Vue.js.
-                I'm now seeking a 4–6 month internship starting February 2026, where I can contribute to impactful projects and grow in a dynamic tech team.
-
-                Let’s build something meaningful together
+                    Passionné par les technologies et l'innovation, je possède une double expertise en <strong>développement Full Stack Java/Angular</strong> et en <strong>Data Engineering</strong>. Je suis à la recherche d'une opportunité qui me permettra de contribuer à des projets à forte valeur ajoutée tout en développant mes compétences professionnelles.
                 </p>
-                -->
+                
                 <div class="social">
-                    <a href="#"><i class="ri-facebook-fill"></i></a>
-                    <a href="#"><i class="ri-instagram-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-fill"></i></a>
-                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://github.com/alphambd" target="_blank" title="GitHub">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/alpha-diallo-mb" target="_blank" title="LinkedIn">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="mailto:alpha.diallo.mb@gmail.com" title="Email">
+                        <i class="ri-mail-fill"></i>
+                    </a>
                 </div>
 
                 <div class="main-btn">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn btn2">Download CV</a>
+                    <a href="#profils" class="btn">Découvrir mes profils</a>
+                    <a href="#contact" class="btn btn2">Me contacter</a>
                 </div>
             </div>
         </section>
@@ -81,194 +89,232 @@
         <!-- about -->
         <section class="about" id="about">
             <div class="about-img" data-aos="zoom-in-down">
-                <img src="img/photo_id_aboutme.png" alt="about image">
+                <img src="assets/img/photo_id_aboutme.png" alt="Alpha Diallo - Photo professionnelle">
             </div>
 
             <div class="about-text" data-aos="zoom-in-up">
-                <h2>I am <span>Data Scientist</span> <br> & Web Developer</h2>
+                <h2>À propos de <span>moi</span></h2>
+                <p>
+                    Je suis un passionné de technologie avec une solide formation en informatique. Mon parcours académique combiné à mes expériences pratiques m'a permis de développer une expertise polyvalente couvrant le développement d'applications web et le traitement de données à grande échelle.
+                </p>
+                
                 <div class="exp-area">
                     <p class="exp">
-                        Experience : 
-                        <span>4 Years</span>
+                        Formation : 
+                        <span>Master Données et Systèmes Connectés</span>
                     </p>
 
                     <p class="exp">
-                        Speciality : 
-                        <span>Data Science, Developer</span>
+                        Spécialités : 
+                        <span>Full Stack Java/Angular & Data Engineering</span>
                     </p>
 
                     <p class="exp">
-                        Address : 
-                        <span>Saint-Etienne, France</span>
+                        Localisation : 
+                        <span>Saint-Étienne, France</span>
                     </p>
 
                     <p class="exp">
                         Email : 
-                        <span>alphadiallo.mb@gmail.com</span>
+                        <span>alpha.diallo.mb@gmail.com</span>
                     </p>
 
                     <p class="exp">
-                        Phone : 
-                        <span>+33 6 12 34 56 78</span>
+                        Téléphone : 
+                        <span>+33 (0)6 68 39 33 56</span>
                     </p>
 
                     <p class="exp">
-                        Freelance : 
-                        <span>Available</span>
+                        Stage recherché : 
+                        <span>6 mois à partir de février 2026</span>
                     </p>
-                </div>
-                <a href="#" class="btn">View All Projects</a>
-            </div>
-        </section>
-
-        <!-- services -->
-        <section class="services" id="services">
-            <div class="center-text" data-aos="fade-down">
-                <h2>My <span>services</span></h2>
-            </div>
-
-            <div class="services-content" data-aos="zoom-in-up">
-                <div class="box">
-                    <img src="img/s-1.png" alt="">
-                    <h3>UI/UX Design</h3>
-                    <p>Fringilla, urna id tincidunt ultrices, nisi nisl lacinia mi, at interdum velit mauris eget libero.</p>
-                    <a href="#">
-                        Download CV
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <img src="img/s-1.png" alt="">
-                    <h3>UI/UX Design</h3>
-                    <p>Fringilla, urna id tincidunt ultrices, nisi nisl lacinia mi, at interdum velit mauris eget libero.</p>
-                    <a href="#">
-                        Download CV
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
-
-                <div class="box">
-                    <img src="img/s-1.png" alt="">
-                    <h3>UI/UX Design</h3>
-                    <p>Fringilla, urna id tincidunt ultrices, nisi nisl lacinia mi, at interdum velit mauris eget libero.</p>
-                    <a href="#">
-                        Download CV
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- portfolio -->
-        <section class="portfolio" id="portfolio">
-            <div class="center-text" data-aos="fade-down">
-                <h2>My <span>Portfolio</span></h2>
-            </div>
-
-            <div class="portfolio-content" data-aos="zoom-in-up">
-                <div class="row">
-                    <img src="img/webdev_img.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Design</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development For Dark X</h4>
-                </div>
-
-                <div class="row">
-                    <img src="img/webdev_img.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Design</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development For Dark X</h4>
-                </div>
-
-                <div class="row">
-                    <img src="img/webdev_img.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Design</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development For Dark X</h4>
-                </div>
-
-                <div class="row">
-                    <img src="img/webdev_img.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Design</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development For Dark X</h4>
-                </div>
-
-                <div class="row">
-                    <img src="img/webdev_img.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Design</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development For Dark X</h4>
-                </div>
-
-                <div class="row">
-                    <img src="img/webdev_img.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Design</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development For Dark X</h4>
                 </div>
                 
+                <a href="#profils" class="btn">Explorer mes compétences</a>
             </div>
+        </section>
+
+        <!-- profils -->
+        <section class="profils" id="profils">
+            <div class="center-text" data-aos="fade-down">
+                <h2>Mes <span>Profils</span></h2>
+                <p class="section-subtitle">Je vous propose deux profils spécialisés adaptés à différents besoins</p>
+            </div>
+
+            <div class="profils-content" data-aos="zoom-in-up">
+                <div class="profil-card">
+                    <div class="profil-icon">
+                        <i class="ri-code-s-slash-fill"></i>
+                    </div>
+                    <h3>Développeur Full Stack Java/Angular</h3>
+                    <p>Développeur d’applications web robustes avec Java Spring Boot et Angular.
+                    Conception d’API REST, d’interfaces utilisateur réactives et d’architectures orientées microservices.</p>
+                    <div class="profil-skills">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Angular</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="profil-buttons">
+                        <a href="fullstack.html" class="btn">Voir ce profil</a>
+                        <a href="assets/pdf/Alpha_DIALLO_Stage_M2_Développeur_FullStack_Java_Angular.pdf" class="btn btn2" download>Télécharger le CV</a>
+                    </div>
+                </div>
+
+                <div class="profil-card">
+                    <div class="profil-icon">
+                        <i class="ri-database-2-fill"></i>
+                    </div>
+                    <h3>Data Engineer / Data Scientist</h3>
+                    <p>Spécialiste en conception de pipelines de données, traitement big data avec Spark, et développement de solutions d'IA. Création d'architectures analytiques et visualisations de données.</p>
+                    <div class="profil-skills">
+                        <span>Python</span>
+                        <span>Apache Spark</span>
+                        <span>Airflow</span>
+                        <span>Machine Learning</span>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="profil-buttons">
+                        <a href="data-engineer.html" class="btn">Voir ce profil</a>
+                        <a href="assets/pdf/Alpha_DIALLO_Stage_M2_Data_Engineer.pdf" class="btn btn2" download>Télécharger le CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- compétences générales -->
+        <section class="competences" id="competences">
+            <div class="center-text" data-aos="fade-down">
+                <h2>Compétences <span>Transversales</span></h2>
+            </div>
+
+            <div class="competences-content" data-aos="zoom-in-up">
+                <div class="competence-category">
+                    <h3><i class="ri-code-box-line"></i> Développement</h3>
+                    <ul>
+                        <li>Java (Spring Boot, JPA/Hibernate)</li>
+                        <li>Python (Pandas, Scikit-learn, TensorFlow)</li>
+                        <li>JavaScript/TypeScript (Angular, Vue.js)</li>
+                        <li>SQL (PostgreSQL, MySQL, Oracle)</li>
+                    </ul>
+                </div>
+
+                <div class="competence-category">
+                    <h3><i class="ri-cloud-line"></i> Data & Cloud</h3>
+                    <ul>
+                        <li>Apache Spark & PySpark</li>
+                        <li>Apache Airflow</li>
+                        <li>Apache Kafka</li>
+                        <li>AWS (S3, Glue, Athena)</li>
+                    </ul>
+                </div>
+
+                <div class="competence-category">
+                    <h3><i class="ri-tools-line"></i> DevOps & Outils</h3>
+                    <ul>
+                        <li>Git, GitHub/GitLab</li>
+                        <li>Docker, Kubernetes</li>
+                        <li>CI/CD (GitHub Actions)</li>
+                        <li>Power BI, Grafana</li>
+                    </ul>
+                </div>
+
+                <div class="competence-category">
+                    <h3><i class="ri-team-line"></i> Soft Skills</h3>
+                    <ul>
+                        <li>Travail d'équipe & collaboration</li>
+                        <li>Adaptabilité & polyvalence</li>
+                        <li>Rigueur & bonnes pratiques</li>
+                        <li>Communication & pédagogie</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!--contact-->
         <section class="contact" id="contact">
             <div class="center-text" data-aos="fade-down">
-                <h2>Contact <span>Me</span></h2>
+                <h2>Contactez-<span>moi</span></h2>
+                <p class="section-subtitle">Disponible pour un stage de 6 mois à partir de février 2026</p>
             </div>
 
-            <div class="contact-form" data-aos="zoom-in">
-                <form action="">
-                    <input type="text" placeholder="Your name" required>
-                    <input type="email" placeholder="Email Address..." required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here ..." required></textarea>
-                    <input type="submit" name="" value="Send Message" class="send-btn">
-                </form>
+            <div class="contact-content" data-aos="zoom-in">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="ri-mail-fill"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>alpha.diallo.mb@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-phone-fill"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 (0)6 68 39 33 56</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-map-pin-fill"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Saint-Étienne, France (mobile sur toute la France)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-github-fill"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/alphambd</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number" id="contact_number">
+                        
+                        <input type="text" name="user_name" placeholder="Votre nom" required>
+                        <input type="email" name="user_email" placeholder="Votre adresse email" required>
+                        <input type="text" name="subject" placeholder="Sujet de votre message" required>
+                        
+                        <textarea name="message" placeholder="Votre message..." rows="6" required></textarea>
+                        
+                        <p class="privacy-note">
+                            <i class="ri-shield-check-line"></i>
+                            Vos données sont traitées conformément à notre 
+                            <a href="privacy.html" target="_blank">politique de confidentialité</a>.
+                        </p>
+                        
+                        <button type="submit" class="send-btn">
+                            <i class="ri-send-plane-line"></i> Envoyer le message
+                        </button>
+                        
+                        <div id="success-message" class="message-alert success">
+                            <i class="ri-checkbox-circle-fill"></i> Message envoyé avec succès !
+                        </div>
+                        
+                        <div id="error-message" class="message-alert error">
+                            <i class="ri-error-warning-fill"></i> Une erreur est survenue. Veuillez réessayer.
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </section>
             
-            
         <div class="footer">
             <div class="copyright">
-                <p>2025 Diallo Alpha, All Rights Reserved.</p>
+                <p>© 2025 Alpha Diallo - Tous droits réservés</p>
+                <p class="footer-links">
+                    <a href="index.html">Accueil</a> | 
+                    <a href="fullstack.html">Profil Full Stack</a> | 
+                    <a href="data-engineer.html">Profil Data Engineer</a>
+                </p>
             </div>
-            <a href="#homw" class="scroll-top">
+            <a href="#home" class="scroll-top">
                 <i class="ri-arrow-up-s-fill"></i>
             </a>
         </div>
@@ -284,8 +330,5 @@
                 duration: 1400,
             });
         </script>
-
-
-
     </body>
 </html>

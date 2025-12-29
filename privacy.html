@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politique de Confidentialité - Alpha Diallo</title>
+    <meta name="description" content="Politique de confidentialité et protection des données personnelles pour le portfolio d'Alpha Diallo">
+    
+    <!-- Même styles que votre portfolio -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Styles spécifiques à la page politique */
+        .privacy-container {
+            max-width: 900px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+        
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .privacy-header .date {
+            color: var(--main-color);
+            font-style: italic;
+        }
+        
+        .privacy-section {
+            background: var(--second-bg-color);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(19, 187, 255, 0.1);
+        }
+        
+        .privacy-section h2 {
+            color: var(--main-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .privacy-section h2 i {
+            font-size: 1.3rem;
+        }
+        
+        .privacy-section p {
+            color: var(--other-color);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .privacy-section ul {
+            color: var(--other-color);
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .privacy-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .privacy-section a {
+            color: var(--main-color);
+            text-decoration: none;
+        }
+        
+        .privacy-section a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background: rgba(19, 187, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--main-color);
+            margin: 20px 0;
+        }
+        
+        .contact-box {
+            background: rgba(19, 187, 255, 0.05);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--main-color);
+            margin-top: 30px;
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .back-home .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .privacy-container {
+                margin: 80px auto 30px;
+            }
+            
+            .privacy-section {
+                padding: 20px;
+            }
+            
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header du portfolio (identique) -->
+    <header>
+        <a href="index.html" class="logo">Alpha <span>Diallo</span></a>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navlist">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#about">À propos</a></li>
+            <li><a href="index.html#profils">Mes profils</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        
+        <div class="top-btn">
+            <a href="index.html#contact" class="h-btn">Me contacter</a>
+        </div>
+    </header>
+    
+    <!-- Contenu de la politique de confidentialité -->
+    <main class="privacy-container">
+        <div class="privacy-header">
+            <h1>Politique de Confidentialité</h1>
+            <p class="date">Dernière mise à jour : 28 décembre 2024</p>
+        </div>
+        
+        <!-- Introduction -->
+        <section class="privacy-section">
+            <h2><i class="ri-information-line"></i> Introduction</h2>
+            <p>Bienvenue sur mon portfolio. Je m'appelle <strong>Alpha Diallo</strong>, étudiant en Master Données et Systèmes Connectés à l'Université Jean Monnet et l'École des Mines de Saint-Étienne.</p>
+            <p>Cette politique de confidentialité explique comment sont collectées, utilisées et protégées vos données personnelles lorsque vous utilisez mon site portfolio et interagissez avec le formulaire de contact.</p>
+            <p>Je m'engage à protéger votre vie privée et à traiter vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la législation française applicable.</p>
+        </section>
+        
+        <!-- Données collectées -->
+        <section class="privacy-section">
+            <h2><i class="ri-database-line"></i> Données personnelles collectées</h2>
+            <p>Lorsque vous utilisez le formulaire de contact, les données suivantes peuvent être collectées :</p>
+            <ul>
+                <li><strong>Nom et prénom</strong> : Pour pouvoir vous adresser une réponse personnalisée</li>
+                <li><strong>Adresse e-mail</strong> : Pour vous répondre à votre demande</li>
+                <li><strong>Sujet du message</strong> : Pour comprendre la nature de votre demande</li>
+                <li><strong>Contenu du message</strong> : Les informations que vous choisissez de partager</li>
+                <li><strong>Métadonnées techniques</strong> : Date, heure et page d'origine de la demande</li>
+            </ul>
+            
+            <div class="highlight">
+                <p><strong>Important :</strong> Aucune donnée de paiement, coordonnées bancaires ou informations sensibles ne sont collectées via ce site.</p>
+            </div>
+        </section>
+        
+        <!-- Finalités du traitement -->
+        <section class="privacy-section">
+            <h2><i class="ri-target-line"></i> Finalités du traitement</h2>
+            <p>Vos données personnelles sont traitées pour les finalités suivantes :</p>
+            <ul>
+                <li>Répondre à vos demandes de contact via le formulaire</li>
+                <li>Traiter les demandes de stage ou d'opportunités professionnelles</li>
+                <li>Améliorer l'expérience utilisateur du site</li>
+                <li>Assurer la sécurité et l'intégrité du site</li>
+                <li>Respecter les obligations légales et réglementaires</li>
+            </ul>
+        </section>
+        
+        <!-- Base légale -->
+        <section class="privacy-section">
+            <h2><i class="ri-scale-line"></i> Base légale du traitement</h2>
+            <p>Le traitement de vos données personnelles est fondé sur :</p>
+            <ul>
+                <li><strong>Votre consentement</strong> : En cochant la case d'acceptation avant l'envoi du formulaire</li>
+                <li><strong>L'intérêt légitime</strong> : Répondre à vos demandes légitimes de contact professionnel</li>
+                <li><strong>L'exécution de mesures précontractuelles</strong> : Traitement de votre demande de stage ou d'emploi</li>
+            </ul>
+        </section>
+        
+        <!-- Durée de conservation -->
+        <section class="privacy-section">
+            <h2><i class="ri-time-line"></i> Durée de conservation</h2>
+            <p>Vos données personnelles sont conservées pendant une durée maximale de :</p>
+            <ul>
+                <li><strong>2 ans</strong> pour les demandes de contact générale</li>
+                <li><strong>3 ans</strong> pour les candidatures à un stage ou emploi</li>
+                <li><strong>1 an</strong> pour les données techniques et de connexion</li>
+            </ul>
+            <p>Passé ces délais, vos données sont soit supprimées, soit anonymisées pour des fins statistiques.</p>
+        </section>
+        
+        <!-- Destinataires des données -->
+        <section class="privacy-section">
+            <h2><i class="ri-share-forward-line"></i> Destinataires des données</h2>
+            <p>Vos données peuvent être communiquées à :</p>
+            <ul>
+                <li><strong>Alpha Diallo</strong> (moi-même) : Responsable du traitement</li>
+                <li><strong>EmailJS</strong> : Service tiers utilisé pour l'envoi des e-mails</li>
+                <li><strong>GitHub Pages</strong> : Hébergeur du site</li>
+            </ul>
+            
+            <div class="highlight">
+                <p><strong>Transmission à EmailJS :</strong> Lorsque vous soumettez le formulaire, vos données sont transmises à EmailJS, un service d'envoi d'e-mails basé aux États-Unis qui adhère au Privacy Shield. Vous pouvez consulter leur politique de confidentialité sur <a href="https://www.emailjs.com/privacy-policy/" target="_blank">emailjs.com/privacy-policy</a>.</p>
+            </div>
+        </section>
+        
+        <!-- Sécurité des données -->
+        <section class="privacy-section">
+            <h2><i class="ri-shield-check-line"></i> Sécurité des données</h2>
+            <p>Je mets en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre :</p>
+            <ul>
+                <li>L'accès non autorisé</li>
+                <li>La modification non autorisée</li>
+                <li>La divulgation non autorisée</li>
+                <li>La destruction ou la perte accidentelle</li>
+            </ul>
+            <p>Ces mesures incluent le chiffrement des communications et l'accès restreint aux données.</p>
+        </section>
+        
+        <!-- Vos droits -->
+        <section class="privacy-section">
+            <h2><i class="ri-user-settings-line"></i> Vos droits</h2>
+            <p>Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :</p>
+            
+            <div class="highlight">
+                <ul>
+                    <li><strong>Droit d'accès</strong> : Obtenir la confirmation que vos données sont traitées et y accéder</li>
+                    <li><strong>Droit de rectification</strong> : Faire rectifier des données inexactes ou incomplètes</li>
+                    <li><strong>Droit à l'effacement</strong> : Demander la suppression de vos données (« droit à l'oubli »)</li>
+                    <li><strong>Droit à la limitation</strong> : Demander la limitation du traitement de vos données</li>
+                    <li><strong>Droit d'opposition</strong> : Vous opposer au traitement de vos données</li>
+                    <li><strong>Droit à la portabilité</strong> : Recevoir vos données dans un format structuré</li>
+                    <li><strong>Droit de retirer votre consentement</strong> : À tout moment, sans affecter la licéité du traitement antérieur</li>
+                </ul>
+            </div>
+            
+            <p>Pour exercer ces droits ou pour toute question concernant le traitement de vos données, vous pouvez me contacter à :</p>
+            
+            <div class="contact-box">
+                <p><strong>Alpha Diallo</strong><br>
+                <i class="ri-mail-line"></i> alpha.diallo.mb@gmail.com<br>
+                <i class="ri-phone-line"></i> +33 (0)6 68 39 33 56</p>
+                <p>Je m'engage à répondre dans un délai maximum d'<strong>un mois</strong> à compter de la réception de votre demande.</p>
+            </div>
+            
+            <p>Si vous estimez que vos droits ne sont pas respectés, vous avez le droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">Commission Nationale de l'Informatique et des Libertés (CNIL)</a>.</p>
+        </section>
+        
+        <!-- Cookies -->
+        <section class="privacy-section">
+            <h2><i class="ri-cookie-line"></i> Cookies</h2>
+            <p>Ce site n'utilise pas de cookies de suivi ou de publicité. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés.</p>
+            <p>Les cookies suivants peuvent être utilisés :</p>
+            <ul>
+                <li><strong>Cookies de session</strong> : Pour maintenir votre connexion pendant la navigation</li>
+                <li><strong>Cookies de préférences</strong> : Pour mémoriser vos choix d'affichage</li>
+            </ul>
+            <p>Vous pouvez configurer votre navigateur pour refuser les cookies, mais certaines fonctionnalités du site pourraient ne pas fonctionner correctement.</p>
+        </section>
+        
+        <!-- Modifications -->
+        <section class="privacy-section">
+            <h2><i class="ri-history-line"></i> Modifications de la politique</h2>
+            <p>Je me réserve le droit de modifier cette politique de confidentialité à tout moment. Les modifications prendront effet dès leur publication sur cette page.</p>
+            <p>Je vous encourage à consulter régulièrement cette page pour prendre connaissance des éventuelles mises à jour.</p>
+            <p>La date de la dernière mise à jour est indiquée en haut de cette page.</p>
+        </section>
+        
+        <!-- Contact -->
+        <section class="privacy-section">
+            <h2><i class="ri-contacts-line"></i> Contact</h2>
+            <p>Pour toute question concernant cette politique de confidentialité ou le traitement de vos données personnelles, vous pouvez me contacter :</p>
+            
+            <div class="contact-box">
+                <p>
+                    <strong>Alpha Diallo</strong><br>
+                    Étudiant en Master Données et Systèmes Connectés<br>
+                    Université Jean Monnet | École des Mines de Saint-Étienne<br>
+                    <i class="ri-mail-line"></i> alpha.diallo.mb@gmail.com<br>
+                    <i class="ri-phone-line"></i> +33 (0)6 68 39 33 56<br>
+                    <i class="ri-map-pin-line"></i> Saint-Étienne, France
+                </p>
+            </div>
+        </section>
+        
+        <!-- Bouton retour -->
+        <div class="back-home">
+            <a href="index.html" class="btn">
+                <i class="ri-arrow-left-line"></i> Retour au portfolio
+            </a>
+        </div>
+    </main>
+    
+    <!-- Footer du portfolio (identique) -->
+    <div class="footer">
+        <div class="copyright">
+            <p>© 2025 Alpha Diallo - Tous droits réservés</p>
+            <p class="footer-links">
+                <a href="index.html">Accueil</a> | 
+                <a href="fullstack.html">Profil Full Stack</a> | 
+                <a href="data-engineer.html">Profil Data Engineer</a> |
+                <a href="privacy.html">Confidentialité</a>
+            </p>
+        </div>
+        <a href="#" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        // Script spécifique pour cette page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ajouter la classe active au lien de navigation actuel
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.navlist a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === 'privacy.html') {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Gestion du menu mobile
+            let menu = document.querySelector('#menu-icon');
+            let navlist = document.querySelector('.navlist');
+            
+            if (menu) {
+                menu.onclick = () => {
+                    menu.classList.toggle('bx-x');
+                    navlist.classList.toggle('active');
+                };
+            }
+            
+            window.onscroll = () => {
+                if (menu) menu.classList.remove('bx-x');
+                if (navlist) navlist.classList.remove('active');
+            };
+            
+            // Scroll to top
+            const scrollTop = document.querySelector('.scroll-top');
+            if (scrollTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 500) {
+                        scrollTop.style.display = 'flex';
+                    } else {
+                        scrollTop.style.display = 'none';
+                    }
+                });
+                
+                scrollTop.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
