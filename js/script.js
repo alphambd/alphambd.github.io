@@ -106,7 +106,7 @@ navLinks.forEach(link => {
         link.classList.add('active');
     } else if (currentPage === 'fullstack.html' && linkHref === 'fullstack.html') {
         link.classList.add('active');
-    } else if (currentPage === 'data-engineer.html' && linkHref === 'data-engineer.html') {
+    } else if (currentPage === 'data.html' && linkHref === 'data.html') {
         link.classList.add('active');
     }
 });
